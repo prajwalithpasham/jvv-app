@@ -1,0 +1,46 @@
+/* =========================================================
+   RESPONSIVE BREAKPOINTS
+   ========================================================= */
+
+@media (max-width: 1080px) {
+  .hero-inner { grid-template-columns: 1fr; }
+  .hero-visual { height: 300px; order: -1; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 920px) {
+  .nav-desktop { display: none; }
+  .nav-actions > a.btn,
+  .nav-actions [data-nav-auth-slot] { display: none !important; }
+  .nav-toggle { display: inline-flex; }
+  .grid-3 { grid-template-columns: 1fr 1fr; }
+  .grid-4 { grid-template-columns: 1fr 1fr; }
+  .exam-layout { grid-template-columns: 1fr !important; }
+  .exam-palette-panel { order: -1; }
+}
+
+@media (max-width: 680px) {
+  .container { padding: 0 16px; }
+  .section { padding: 60px 0; }
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+  .hero { padding: 70px 0 60px; }
+  .hero-stats { gap: 18px; }
+  .auth-card { padding: 26px 20px; }
+  .modal { padding: 22px; }
+  .exam-toolbar { flex-wrap: wrap; }
+  .exam-nav-buttons { flex-direction: column; }
+  .exam-nav-buttons .btn { width: 100%; }
+  .results-grid { grid-template-columns: 1fr 1fr !important; }
+  .card { padding: 20px; }
+  .science-cards-filter { overflow-x: auto; }
+}
+
+@media (max-width: 420px) {
+  .results-grid { grid-template-columns: 1fr !important; }
+  .brand-sub { display: none; }
+}
+
+/* Prevent any horizontal scroll from wide tables/content */
+.scroll-x { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+table { min-width: 480px; }

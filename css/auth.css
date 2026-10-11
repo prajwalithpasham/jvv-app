@@ -1,0 +1,30 @@
+/* =========================================================
+   AUTH PAGES — register / login / member-login
+   ========================================================= */
+
+.auth-shell::before {
+  content: "";
+  position: absolute; inset: 0;
+  background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 46px 46px;
+  mask-image: radial-gradient(ellipse at 50% 40%, black 0%, transparent 70%);
+}
+
+.auth-demo-banner {
+  display: flex; align-items: center; gap: 10px;
+  background: rgba(255,182,72,0.08);
+  border: 1px solid rgba(255,182,72,0.25);
+  color: var(--amber);
+  font-size: 0.8rem;
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 22px;
+}
+
+.auth-split-tabs { display: flex; gap: 8px; margin-bottom: 26px; background: rgba(255,255,255,0.04); border-radius: 999px; padding: 4px; }
+.auth-split-tabs a { flex: 1; text-align: center; padding: 10px; border-radius: 999px; font-size: 0.86rem; font-weight: 700; color: var(--text-muted); }
+.auth-split-tabs a.active { background: var(--grad-accent); color: var(--text-on-accent); }
+
+.password-strength { height: 4px; border-radius: 3px; background: rgba(255,255,255,0.08); margin-top: 8px; overflow: hidden; }
+.password-strength-bar { height: 100%; width: 0%; background: var(--danger); transition: width .25s, background .25s; }
